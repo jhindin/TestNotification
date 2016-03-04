@@ -18,8 +18,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void sayHello(View view) {
-        Toast.makeText(this, "Zhopa", Toast.LENGTH_LONG).show();
+    public void normalNotifciation(View view) {
+        Toast.makeText(this, "Creating normal notification", Toast.LENGTH_LONG).show();
+
+        NotificationCompat.Builder mBuilder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(R.drawable.sms2gmail_small)
+                        .setContentTitle("My notification")
+                        .setContentText("Hello World!");
+        int mNotificationId = 1;
+// Gets an instance of the NotificationManager service
+        NotificationManager   mNotifyMgr =
+                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+// Builds the notification and issues it.
+        mNotifyMgr.notify(mNotificationId, mBuilder.build());
+    }
+
+    public void errorNotifciation(View view) {
+        Toast.makeText(this, "Creating error notification", Toast.LENGTH_LONG).show();
 
         NotificationCompat.Builder mBuilder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
