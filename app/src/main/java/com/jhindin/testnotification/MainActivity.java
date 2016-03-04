@@ -23,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationCompat.Builder mBuilder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.ic_notification_icon)
+                        .setSmallIcon(R.drawable.sms_broken)
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
-        int mNotificationId = 001;
+        int mNotificationId = 1;
 // Gets an instance of the NotificationManager service
         NotificationManager   mNotifyMgr =
                 (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
