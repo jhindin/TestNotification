@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationCompat.Builder mBuilder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.sms2gmail_small)
+                        .setSmallIcon(R.drawable.mono_sms2gmail_small)
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
         int mNotificationId = 1;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         NotificationCompat.Builder mBuilder =
                 (NotificationCompat.Builder) new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.sms_broken)
+                        .setSmallIcon(R.drawable.mono_sms_broken)
                         .setContentTitle("My notification")
                         .setContentText("Hello World!");
         int mNotificationId = 1;
